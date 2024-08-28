@@ -5,9 +5,11 @@ import matplotlib.pyplot as plt
 # Load the data from the CSV file
 data = pd.read_csv('D:\\Python\\Pandas\\cars_2010_2020.csv')
 
+
 # Print the unique list of car companies available in the dataset
 companies = data['Company'].unique()
 print(f"Available car companies in the dataset:\n{companies}\n")
+
 
 # Prompt the user to input the name of the company they want to analyze
 company_name = input('Enter the name of the company you want to see the total details for: ').strip()
